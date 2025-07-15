@@ -1803,6 +1803,19 @@ cilium.io:
     filename: cilium.io/ciliumbgpnodeconfig_v2alpha1.json
     kind: CiliumBGPNodeConfig
     name: ciliumbgpnodeconfig_v2alpha1
+clickhouse.altinity.com:
+  - apiVersion: clickhouse.altinity.com/v1
+    filename: clickhouse.altinity.com/clickhouseoperatorconfiguration_v1.json
+    kind: clickhouseoperatorconfiguration
+    name: clickhouseoperatorconfiguration_v1
+  - apiVersion: clickhouse.altinity.com/v1
+    filename: clickhouse.altinity.com/clickhouseinstallationtemplate_v1.json
+    kind: clickhouseinstallationtemplate
+    name: clickhouseinstallationtemplate_v1
+  - apiVersion: clickhouse.altinity.com/v1
+    filename: clickhouse.altinity.com/clickhouseinstallation_v1.json
+    kind: clickhouseinstallation
+    name: clickhouseinstallation_v1
 cloud.google.com:
   - apiVersion: cloud.google.com/v1beta1
     filename: cloud.google.com/backendconfig_v1beta1.json
@@ -7774,6 +7787,14 @@ operator.victoriametrics.com:
     filename: operator.victoriametrics.com/vmstaticscrape_v1beta1.json
     kind: VMStaticScrape
     name: vmstaticscrape_v1beta1
+  - apiVersion: operator.victoriametrics.com/v1
+    filename: operator.victoriametrics.com/vlcluster_v1.json
+    kind: VLCluster
+    name: vlcluster_v1
+  - apiVersion: operator.victoriametrics.com/v1
+    filename: operator.victoriametrics.com/vlsingle_v1.json
+    kind: VLSingle
+    name: vlsingle_v1
 operators.coreos.com:
   - apiVersion: operators.coreos.com/v2
     filename: operators.coreos.com/operatorcondition_v2.json
@@ -8422,6 +8443,10 @@ rabbitmq.com:
     filename: rabbitmq.com/user_v1beta1.json
     kind: User
     name: user_v1beta1
+  - apiVersion: rabbitmq.com/v1beta1
+    filename: rabbitmq.com/operatorpolicy_v1beta1.json
+    kind: OperatorPolicy
+    name: operatorpolicy_v1beta1
 ratelimit.solo.io:
   - apiVersion: ratelimit.solo.io/v1alpha1
     filename: ratelimit.solo.io/ratelimitconfig_v1alpha1.json
@@ -9791,6 +9816,23 @@ trust.cert-manager.io:
     filename: trust.cert-manager.io/bundle_v1alpha1.json
     kind: bundle
     name: bundle_v1alpha1
+twingate.com:
+  - apiVersion: twingate.com/v1beta
+    filename: twingate.com/twingateconnector_v1beta.json
+    kind: TwingateConnector
+    name: twingateconnector_v1beta
+  - apiVersion: twingate.com/v1beta
+    filename: twingate.com/twingateresource_v1beta.json
+    kind: TwingateResource
+    name: twingateresource_v1beta
+  - apiVersion: twingate.com/v1beta
+    filename: twingate.com/twingateresourceaccess_v1beta.json
+    kind: TwingateResourceAccess
+    name: twingateresourceaccess_v1beta
+  - apiVersion: twingate.com/v1beta
+    filename: twingate.com/twingategroup_v1beta.json
+    kind: TwingateGroup
+    name: twingategroup_v1beta
 uds.dev:
   - apiVersion: uds.dev/v1alpha1
     filename: uds.dev/exemption_v1alpha1.json
