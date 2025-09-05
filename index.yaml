@@ -1183,6 +1183,11 @@ azmonitoring.coreos.com:
     filename: azmonitoring.coreos.com/podmonitor_v1.json
     kind: podmonitor
     name: podmonitor_v1
+azure.upbound.io:
+  - apiVersion: azure.upbound.io/v1beta1
+    filename: azure.upbound.io/providerconfig_v1beta1.json
+    kind: ProviderConfig
+    name: providerconfig_v1beta1
 azureprovider.k8s.io:
   - apiVersion: azureprovider.k8s.io/v1alpha1
     filename: azureprovider.k8s.io/azuremachineproviderstatus_v1alpha1.json
@@ -5520,6 +5525,38 @@ infrastructure.cluster.x-k8s.io:
     filename: infrastructure.cluster.x-k8s.io/devcluster_v1beta1.json
     kind: DevCluster
     name: devcluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/vsphereclustertemplate_v1beta1.json
+    kind: VSphereClusterTemplate
+    name: vsphereclustertemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/vspherevm_v1beta1.json
+    kind: VSphereVM
+    name: vspherevm_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/vspherefailuredomain_v1beta1.json
+    kind: VSphereFailureDomain
+    name: vspherefailuredomain_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/vspheremachinetemplate_v1beta1.json
+    kind: VSphereMachineTemplate
+    name: vspheremachinetemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/vspheredeploymentzone_v1beta1.json
+    kind: VSphereDeploymentZone
+    name: vspheredeploymentzone_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/vsphereclusteridentity_v1beta1.json
+    kind: VSphereClusterIdentity
+    name: vsphereclusteridentity_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/vspherecluster_v1beta1.json
+    kind: VSphereCluster
+    name: vspherecluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/vspheremachine_v1beta1.json
+    kind: VSphereMachine
+    name: vspheremachine_v1beta1
 ingress.oraclecloud.com:
   - apiVersion: ingress.oraclecloud.com/v1beta1
     filename: ingress.oraclecloud.com/ingressclassparameters_v1beta1.json
@@ -5636,6 +5673,10 @@ k6.io:
     filename: k6.io/testrun_v1alpha1.json
     kind: testrun
     name: testrun_v1alpha1
+  - apiVersion: k6.io/v1alpha1
+    filename: k6.io/privateloadzone_v1alpha1.json
+    kind: privateloadzone
+    name: privateloadzone_v1alpha1
 k8s.cni.cncf.io:
   - apiVersion: k8s.cni.cncf.io/v1
     filename: k8s.cni.cncf.io/networkattachmentdefinition_v1.json
@@ -8538,6 +8579,67 @@ redis.redis.opstreelabs.in:
     filename: redis.redis.opstreelabs.in/rediscluster_v1beta2.json
     kind: RedisCluster
     name: rediscluster_v1beta2
+resource.streamnative.io:
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsarnamespace_v1alpha1.json
+    kind: PulsarNamespace
+    name: pulsarnamespace_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsargeoreplication_v1alpha1.json
+    kind: PulsarGeoReplication
+    name: pulsargeoreplication_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/computeflinkdeployment_v1alpha1.json
+    kind: ComputeFlinkDeployment
+    name: computeflinkdeployment_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsarnsisolationpolicy_v1alpha1.json
+    kind: PulsarNSIsolationPolicy
+    name: pulsarnsisolationpolicy_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsarsource_v1alpha1.json
+    kind: PulsarSource
+    name: pulsarsource_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsartenant_v1alpha1.json
+    kind: PulsarTenant
+    name: pulsartenant_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsarfunction_v1alpha1.json
+    kind: PulsarFunction
+    name: pulsarfunction_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsarconnection_v1alpha1.json
+    kind: PulsarConnection
+    name: pulsarconnection_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/computeworkspace_v1alpha1.json
+    kind: ComputeWorkspace
+    name: computeworkspace_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsarpermission_v1alpha1.json
+    kind: PulsarPermission
+    name: pulsarpermission_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsartopic_v1alpha1.json
+    kind: PulsarTopic
+    name: pulsartopic_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsarsink_v1alpha1.json
+    kind: PulsarSink
+    name: pulsarsink_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/secret_v1alpha1.json
+    kind: Secret
+    name: secret_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/pulsarpackage_v1alpha1.json
+    kind: PulsarPackage
+    name: pulsarpackage_v1alpha1
+  - apiVersion: resource.streamnative.io/v1alpha1
+    filename: resource.streamnative.io/streamnativecloudconnection_v1alpha1.json
+    kind: StreamNativeCloudConnection
+    name: streamnativecloudconnection_v1alpha1
 resourcemanager.cnrm.cloud.google.com:
   - apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
     filename: resourcemanager.cnrm.cloud.google.com/resourcemanagerlien_v1beta1.json
@@ -8617,6 +8719,15 @@ resources.teleport.dev:
     filename: resources.teleport.dev/teleportopensshserverv2_v1.json
     kind: teleportopensshserverv2
     name: teleportopensshserverv2_v1
+restate.dev:
+  - apiVersion: restate.dev/v1
+    filename: restate.dev/restatecluster_v1.json
+    kind: RestateCluster
+    name: restatecluster_v1
+  - apiVersion: restate.dev/v1beta1
+    filename: restate.dev/restatedeployment_v1beta1.json
+    kind: RestateDeployment
+    name: restatedeployment_v1beta1
 route53.services.k8s.aws:
   - apiVersion: route53.services.k8s.aws/v1alpha1
     filename: route53.services.k8s.aws/hostedzone_v1alpha1.json
