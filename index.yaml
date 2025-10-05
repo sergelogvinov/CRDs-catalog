@@ -109,6 +109,23 @@ actions.summerwind.dev:
     filename: actions.summerwind.dev/horizontalrunnerautoscaler_v1alpha1.json
     kind: HorizontalRunnerAutoscaler
     name: horizontalrunnerautoscaler_v1alpha1
+addon.open-cluster-management.io:
+  - apiVersion: addon.open-cluster-management.io/v1alpha1
+    filename: addon.open-cluster-management.io/addontemplate_v1alpha1.json
+    kind: AddOnTemplate
+    name: addontemplate_v1alpha1
+  - apiVersion: addon.open-cluster-management.io/v1alpha1
+    filename: addon.open-cluster-management.io/clustermanagementaddon_v1alpha1.json
+    kind: ClusterManagementAddOn
+    name: clustermanagementaddon_v1alpha1
+  - apiVersion: addon.open-cluster-management.io/v1alpha1
+    filename: addon.open-cluster-management.io/managedclusteraddon_v1alpha1.json
+    kind: ManagedClusterAddOn
+    name: managedclusteraddon_v1alpha1
+  - apiVersion: addon.open-cluster-management.io/v1alpha1
+    filename: addon.open-cluster-management.io/addondeploymentconfig_v1alpha1.json
+    kind: AddOnDeploymentConfig
+    name: addondeploymentconfig_v1alpha1
 addons.cluster.x-k8s.io:
   - apiVersion: addons.cluster.x-k8s.io/v1alpha4
     filename: addons.cluster.x-k8s.io/clusterresourceset_v1alpha4.json
@@ -1109,6 +1126,11 @@ autopilot.k0sproject.io:
     filename: autopilot.k0sproject.io/plan_v1beta2.json
     kind: Plan
     name: plan_v1beta2
+autoscaling.cast.ai:
+  - apiVersion: autoscaling.cast.ai/v1
+    filename: autoscaling.cast.ai/recommendations_v1.json
+    kind: recommendations
+    name: recommendations_v1
 autoscaling.k8s.elastic.co:
   - apiVersion: autoscaling.k8s.elastic.co/v1alpha1
     filename: autoscaling.k8s.elastic.co/elasticsearchautoscaler_v1alpha1.json
@@ -1421,6 +1443,14 @@ bootstrap.cluster.x-k8s.io:
     filename: bootstrap.cluster.x-k8s.io/talosconfig_v1alpha3.json
     kind: TalosConfig
     name: talosconfig_v1alpha3
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1beta2
+    filename: bootstrap.cluster.x-k8s.io/kubeadmconfig_v1beta2.json
+    kind: KubeadmConfig
+    name: kubeadmconfig_v1beta2
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1beta2
+    filename: bootstrap.cluster.x-k8s.io/kubeadmconfigtemplate_v1beta2.json
+    kind: KubeadmConfigTemplate
+    name: kubeadmconfigtemplate_v1beta2
 cache.azure.com:
   - apiVersion: cache.azure.com/v1api20230701
     filename: cache.azure.com/redisenterprise_v1api20230701.json
@@ -1808,6 +1838,39 @@ cilium.io:
     filename: cilium.io/ciliumbgpnodeconfig_v2alpha1.json
     kind: CiliumBGPNodeConfig
     name: ciliumbgpnodeconfig_v2alpha1
+  - apiVersion: cilium.io/v2
+    filename: cilium.io/ciliumbgppeerconfig_v2.json
+    kind: ciliumbgppeerconfig
+    name: ciliumbgppeerconfig_v2
+  - apiVersion: cilium.io/v2
+    filename: cilium.io/ciliumbgpclusterconfig_v2.json
+    kind: CiliumBGPClusterConfig
+    name: ciliumbgpclusterconfig_v2
+  - apiVersion: cilium.io/v2
+    filename: cilium.io/ciliumbgpadvertisement_v2.json
+    kind: CiliumBGPAdvertisement
+    name: ciliumbgpadvertisement_v2
+  - apiVersion: cilium.io/v2
+    filename: cilium.io/ciliumloadbalancerippool_v2.json
+    kind: CiliumLoadBalancerIPPool
+    name: ciliumloadbalancerippool_v2
+  - apiVersion: cilium.io/v2
+    filename: cilium.io/ciliumcidrgroup_v2.json
+    kind: CiliumCIDRGroup
+    name: ciliumcidrgroup_v2
+  - apiVersion: cilium.io/v2
+    filename: cilium.io/ciliumbgpnodeconfigoverride_v2.json
+    kind: CiliumBGPNodeConfigOverride
+    name: ciliumbgpnodeconfigoverride_v2
+  - apiVersion: cilium.io/v2
+    filename: cilium.io/ciliumbgpnodeconfig_v2.json
+    kind: CiliumBGPNodeConfig
+    name: ciliumbgpnodeconfig_v2
+clickhouse-keeper.altinity.com:
+  - apiVersion: clickhouse-keeper.altinity.com/v1
+    filename: clickhouse-keeper.altinity.com/clickhousekeeperinstallation_v1.json
+    kind: clickhousekeeperinstallation
+    name: clickhousekeeperinstallation_v1
 clickhouse.altinity.com:
   - apiVersion: clickhouse.altinity.com/v1
     filename: clickhouse.altinity.com/clickhouseoperatorconfiguration_v1.json
@@ -1982,6 +2045,35 @@ cloudwatchlogs.services.k8s.aws:
     filename: cloudwatchlogs.services.k8s.aws/loggroup_v1alpha1.json
     kind: LogGroup
     name: loggroup_v1alpha1
+cluster.open-cluster-management.io:
+  - apiVersion: cluster.open-cluster-management.io/v1beta2
+    filename: cluster.open-cluster-management.io/managedclusterset_v1beta2.json
+    kind: ManagedClusterSet
+    name: managedclusterset_v1beta2
+  - apiVersion: cluster.open-cluster-management.io/v1beta1
+    filename: cluster.open-cluster-management.io/placementdecision_v1beta1.json
+    kind: PlacementDecision
+    name: placementdecision_v1beta1
+  - apiVersion: cluster.open-cluster-management.io/v1beta2
+    filename: cluster.open-cluster-management.io/managedclustersetbinding_v1beta2.json
+    kind: ManagedClusterSetBinding
+    name: managedclustersetbinding_v1beta2
+  - apiVersion: cluster.open-cluster-management.io/v1alpha1
+    filename: cluster.open-cluster-management.io/addonplacementscore_v1alpha1.json
+    kind: AddOnPlacementScore
+    name: addonplacementscore_v1alpha1
+  - apiVersion: cluster.open-cluster-management.io/v1alpha1
+    filename: cluster.open-cluster-management.io/clusterclaim_v1alpha1.json
+    kind: ClusterClaim
+    name: clusterclaim_v1alpha1
+  - apiVersion: cluster.open-cluster-management.io/v1beta1
+    filename: cluster.open-cluster-management.io/placement_v1beta1.json
+    kind: Placement
+    name: placement_v1beta1
+  - apiVersion: cluster.open-cluster-management.io/v1
+    filename: cluster.open-cluster-management.io/managedcluster_v1.json
+    kind: ManagedCluster
+    name: managedcluster_v1
 cluster.x-k8s.io:
   - apiVersion: cluster.x-k8s.io/v1beta1
     filename: cluster.x-k8s.io/machinedeployment_v1beta1.json
@@ -2103,6 +2195,38 @@ cluster.x-k8s.io:
     filename: cluster.x-k8s.io/machinedrainrule_v1beta1.json
     kind: MachineDrainRule
     name: machinedrainrule_v1beta1
+  - apiVersion: cluster.x-k8s.io/v1beta2
+    filename: cluster.x-k8s.io/machine_v1beta2.json
+    kind: Machine
+    name: machine_v1beta2
+  - apiVersion: cluster.x-k8s.io/v1beta2
+    filename: cluster.x-k8s.io/cluster_v1beta2.json
+    kind: Cluster
+    name: cluster_v1beta2
+  - apiVersion: cluster.x-k8s.io/v1beta2
+    filename: cluster.x-k8s.io/machinepool_v1beta2.json
+    kind: MachinePool
+    name: machinepool_v1beta2
+  - apiVersion: cluster.x-k8s.io/v1beta2
+    filename: cluster.x-k8s.io/clusterclass_v1beta2.json
+    kind: ClusterClass
+    name: clusterclass_v1beta2
+  - apiVersion: cluster.x-k8s.io/v1beta2
+    filename: cluster.x-k8s.io/machinedrainrule_v1beta2.json
+    kind: MachineDrainRule
+    name: machinedrainrule_v1beta2
+  - apiVersion: cluster.x-k8s.io/v1beta2
+    filename: cluster.x-k8s.io/machinedeployment_v1beta2.json
+    kind: MachineDeployment
+    name: machinedeployment_v1beta2
+  - apiVersion: cluster.x-k8s.io/v1beta2
+    filename: cluster.x-k8s.io/machineset_v1beta2.json
+    kind: MachineSet
+    name: machineset_v1beta2
+  - apiVersion: cluster.x-k8s.io/v1beta2
+    filename: cluster.x-k8s.io/machinehealthcheck_v1beta2.json
+    kind: MachineHealthCheck
+    name: machinehealthcheck_v1beta2
 clusterctl.cluster.x-k8s.io:
   - apiVersion: clusterctl.cluster.x-k8s.io/v1alpha3
     filename: clusterctl.cluster.x-k8s.io/provider_v1alpha3.json
@@ -2703,6 +2827,14 @@ controlplane.cluster.x-k8s.io:
     filename: controlplane.cluster.x-k8s.io/taloscontrolplane_v1alpha3.json
     kind: TalosControlPlane
     name: taloscontrolplane_v1alpha3
+  - apiVersion: controlplane.cluster.x-k8s.io/v1beta2
+    filename: controlplane.cluster.x-k8s.io/kubeadmcontrolplane_v1beta2.json
+    kind: KubeadmControlPlane
+    name: kubeadmcontrolplane_v1beta2
+  - apiVersion: controlplane.cluster.x-k8s.io/v1beta2
+    filename: controlplane.cluster.x-k8s.io/kubeadmcontrolplanetemplate_v1beta2.json
+    kind: KubeadmControlPlaneTemplate
+    name: kubeadmcontrolplanetemplate_v1beta2
 core.cnrm.cloud.google.com:
   - apiVersion: core.cnrm.cloud.google.com/v1beta1
     filename: core.cnrm.cloud.google.com/configconnector_v1beta1.json
@@ -2731,6 +2863,47 @@ crd.k8s.amazonaws.com:
     filename: crd.k8s.amazonaws.com/eniconfig_v1alpha1.json
     kind: ENIConfig
     name: eniconfig_v1alpha1
+csi.ceph.io:
+  - apiVersion: csi.ceph.io/v1alpha1
+    filename: csi.ceph.io/operatorconfig_v1alpha1.json
+    kind: OperatorConfig
+    name: operatorconfig_v1alpha1
+  - apiVersion: csi.ceph.io/v1alpha1
+    filename: csi.ceph.io/clientprofile_v1alpha1.json
+    kind: ClientProfile
+    name: clientprofile_v1alpha1
+  - apiVersion: csi.ceph.io/v1alpha1
+    filename: csi.ceph.io/driver_v1alpha1.json
+    kind: Driver
+    name: driver_v1alpha1
+  - apiVersion: csi.ceph.io/v1
+    filename: csi.ceph.io/clientprofile_v1.json
+    kind: ClientProfile
+    name: clientprofile_v1
+  - apiVersion: csi.ceph.io/v1alpha1
+    filename: csi.ceph.io/cephconnection_v1alpha1.json
+    kind: CephConnection
+    name: cephconnection_v1alpha1
+  - apiVersion: csi.ceph.io/v1
+    filename: csi.ceph.io/cephconnection_v1.json
+    kind: CephConnection
+    name: cephconnection_v1
+  - apiVersion: csi.ceph.io/v1
+    filename: csi.ceph.io/driver_v1.json
+    kind: Driver
+    name: driver_v1
+  - apiVersion: csi.ceph.io/v1
+    filename: csi.ceph.io/clientprofilemapping_v1.json
+    kind: ClientProfileMapping
+    name: clientprofilemapping_v1
+  - apiVersion: csi.ceph.io/v1alpha1
+    filename: csi.ceph.io/clientprofilemapping_v1alpha1.json
+    kind: ClientProfileMapping
+    name: clientprofilemapping_v1alpha1
+  - apiVersion: csi.ceph.io/v1
+    filename: csi.ceph.io/operatorconfig_v1.json
+    kind: OperatorConfig
+    name: operatorconfig_v1
 customize.core.cnrm.cloud.google.com:
   - apiVersion: customize.core.cnrm.cloud.google.com/v1alpha1
     filename: customize.core.cnrm.cloud.google.com/controllerresource_v1alpha1.json
@@ -2936,6 +3109,15 @@ datastream.cnrm.cloud.google.com:
     filename: datastream.cnrm.cloud.google.com/datastreamconnectionprofile_v1alpha1.json
     kind: datastreamconnectionprofile
     name: datastreamconnectionprofile_v1alpha1
+db.atlasgo.io:
+  - apiVersion: db.atlasgo.io/v1alpha1
+    filename: db.atlasgo.io/atlasmigration_v1alpha1.json
+    kind: AtlasMigration
+    name: atlasmigration_v1alpha1
+  - apiVersion: db.atlasgo.io/v1alpha1
+    filename: db.atlasgo.io/atlasschema_v1alpha1.json
+    kind: AtlasSchema
+    name: atlasschema_v1alpha1
 dbaas.percona.com:
   - apiVersion: dbaas.percona.com/v1
     filename: dbaas.percona.com/databasecluster_v1.json
@@ -5905,6 +6087,15 @@ kargo.akuity.io:
     filename: kargo.akuity.io/clusterpromotiontask_v1alpha1.json
     kind: clusterpromotiontask
     name: clusterpromotiontask_v1alpha1
+karpenter.azure.com:
+  - apiVersion: karpenter.azure.com/v1beta1
+    filename: karpenter.azure.com/aksnodeclass_v1beta1.json
+    kind: AKSNodeClass
+    name: aksnodeclass_v1beta1
+  - apiVersion: karpenter.azure.com/v1alpha2
+    filename: karpenter.azure.com/aksnodeclass_v1alpha2.json
+    kind: AKSNodeClass
+    name: aksnodeclass_v1alpha2
 karpenter.k8s.aws:
   - apiVersion: karpenter.k8s.aws/v1alpha1
     filename: karpenter.k8s.aws/awsnodetemplate_v1alpha1.json
@@ -5986,6 +6177,27 @@ kibana.k8s.elastic.co:
     filename: kibana.k8s.elastic.co/kibana_v1.json
     kind: Kibana
     name: kibana_v1
+kinda.rocks:
+  - apiVersion: kinda.rocks/v1alpha1
+    filename: kinda.rocks/dbinstance_v1alpha1.json
+    kind: DbInstance
+    name: dbinstance_v1alpha1
+  - apiVersion: kinda.rocks/v1beta1
+    filename: kinda.rocks/dbuser_v1beta1.json
+    kind: DbUser
+    name: dbuser_v1beta1
+  - apiVersion: kinda.rocks/v1beta1
+    filename: kinda.rocks/database_v1beta1.json
+    kind: Database
+    name: database_v1beta1
+  - apiVersion: kinda.rocks/v1beta1
+    filename: kinda.rocks/dbinstance_v1beta1.json
+    kind: DbInstance
+    name: dbinstance_v1beta1
+  - apiVersion: kinda.rocks/v1alpha1
+    filename: kinda.rocks/database_v1alpha1.json
+    kind: Database
+    name: database_v1alpha1
 kinesis.services.k8s.aws:
   - apiVersion: kinesis.services.k8s.aws/v1alpha1
     filename: kinesis.services.k8s.aws/stream_v1alpha1.json
@@ -7555,6 +7767,19 @@ networkservices.cnrm.cloud.google.com:
     filename: networkservices.cnrm.cloud.google.com/networkserviceshttproute_v1beta1.json
     kind: networkserviceshttproute
     name: networkserviceshttproute_v1beta1
+nfd.k8s-sigs.io:
+  - apiVersion: nfd.k8s-sigs.io/v1alpha1
+    filename: nfd.k8s-sigs.io/nodefeaturegroup_v1alpha1.json
+    kind: NodeFeatureGroup
+    name: nodefeaturegroup_v1alpha1
+  - apiVersion: nfd.k8s-sigs.io/v1alpha1
+    filename: nfd.k8s-sigs.io/nodefeature_v1alpha1.json
+    kind: NodeFeature
+    name: nodefeature_v1alpha1
+  - apiVersion: nfd.k8s-sigs.io/v1alpha1
+    filename: nfd.k8s-sigs.io/nodefeaturerule_v1alpha1.json
+    kind: NodeFeatureRule
+    name: nodefeaturerule_v1alpha1
 notebooks.cnrm.cloud.google.com:
   - apiVersion: notebooks.cnrm.cloud.google.com/v1alpha1
     filename: notebooks.cnrm.cloud.google.com/notebooksenvironment_v1alpha1.json
@@ -7614,6 +7839,15 @@ notificationhubs.azure.com:
     filename: notificationhubs.azure.com/namespacesauthorizationrule_v1api20230901.json
     kind: namespacesauthorizationrule
     name: namespacesauthorizationrule_v1api20230901
+nvidia.com:
+  - apiVersion: nvidia.com/v1alpha1
+    filename: nvidia.com/nvidiadriver_v1alpha1.json
+    kind: NVIDIADriver
+    name: nvidiadriver_v1alpha1
+  - apiVersion: nvidia.com/v1
+    filename: nvidia.com/clusterpolicy_v1.json
+    kind: ClusterPolicy
+    name: clusterpolicy_v1
 objectbucket.io:
   - apiVersion: objectbucket.io/v1alpha1
     filename: objectbucket.io/objectbucketclaim_v1alpha1.json
@@ -7674,6 +7908,15 @@ openebs.io:
     filename: openebs.io/diskpool_v1beta2.json
     kind: DiskPool
     name: diskpool_v1beta2
+openreports.io:
+  - apiVersion: openreports.io/v1alpha1
+    filename: openreports.io/report_v1alpha1.json
+    kind: Report
+    name: report_v1alpha1
+  - apiVersion: openreports.io/v1alpha1
+    filename: openreports.io/clusterreport_v1alpha1.json
+    kind: ClusterReport
+    name: clusterreport_v1alpha1
 opensearchservice.services.k8s.aws:
   - apiVersion: opensearchservice.services.k8s.aws/v1alpha1
     filename: opensearchservice.services.k8s.aws/domain_v1alpha1.json
@@ -7746,6 +7989,15 @@ operator.cluster.x-k8s.io:
     filename: operator.cluster.x-k8s.io/runtimeextensionprovider_v1alpha2.json
     kind: RuntimeExtensionProvider
     name: runtimeextensionprovider_v1alpha2
+operator.open-cluster-management.io:
+  - apiVersion: operator.open-cluster-management.io/v1
+    filename: operator.open-cluster-management.io/klusterlet_v1.json
+    kind: Klusterlet
+    name: klusterlet_v1
+  - apiVersion: operator.open-cluster-management.io/v1
+    filename: operator.open-cluster-management.io/clustermanager_v1.json
+    kind: ClusterManager
+    name: clustermanager_v1
 operator.tigera.io:
   - apiVersion: operator.tigera.io/v1
     filename: operator.tigera.io/tigerastatus_v1.json
@@ -8058,6 +8310,23 @@ pipes.services.k8s.aws:
     filename: pipes.services.k8s.aws/pipe_v1alpha1.json
     kind: Pipe
     name: pipe_v1alpha1
+piraeus.io:
+  - apiVersion: piraeus.io/v1
+    filename: piraeus.io/linstorcluster_v1.json
+    kind: LinstorCluster
+    name: linstorcluster_v1
+  - apiVersion: piraeus.io/v1
+    filename: piraeus.io/linstorsatellite_v1.json
+    kind: LinstorSatellite
+    name: linstorsatellite_v1
+  - apiVersion: piraeus.io/v1
+    filename: piraeus.io/linstornodeconnection_v1.json
+    kind: LinstorNodeConnection
+    name: linstornodeconnection_v1
+  - apiVersion: piraeus.io/v1
+    filename: piraeus.io/linstorsatelliteconfiguration_v1.json
+    kind: LinstorSatelliteConfiguration
+    name: linstorsatelliteconfiguration_v1
 pkg.crossplane.io:
   - apiVersion: pkg.crossplane.io/v1
     filename: pkg.crossplane.io/configuration_v1.json
@@ -8172,6 +8441,39 @@ platform.confluent.io:
     filename: platform.confluent.io/controlcenter_v1beta1.json
     kind: ControlCenter
     name: controlcenter_v1beta1
+policies.kyverno.io:
+  - apiVersion: policies.kyverno.io/v2
+    filename: policies.kyverno.io/policyexception_v2.json
+    kind: PolicyException
+    name: policyexception_v2
+  - apiVersion: policies.kyverno.io/v1alpha1
+    filename: policies.kyverno.io/validatingpolicy_v1alpha1.json
+    kind: validatingpolicy
+    name: validatingpolicy_v1alpha1
+  - apiVersion: policies.kyverno.io/v1alpha1
+    filename: policies.kyverno.io/generatingpolicy_v1alpha1.json
+    kind: generatingpolicy
+    name: generatingpolicy_v1alpha1
+  - apiVersion: policies.kyverno.io/v1alpha1
+    filename: policies.kyverno.io/mutatingpolicy_v1alpha1.json
+    kind: mutatingpolicy
+    name: mutatingpolicy_v1alpha1
+  - apiVersion: policies.kyverno.io/v1alpha1
+    filename: policies.kyverno.io/deletingpolicy_v1alpha1.json
+    kind: deletingpolicy
+    name: deletingpolicy_v1alpha1
+  - apiVersion: policies.kyverno.io/v1alpha1
+    filename: policies.kyverno.io/policyexception_v1alpha1.json
+    kind: PolicyException
+    name: policyexception_v1alpha1
+  - apiVersion: policies.kyverno.io/v1alpha1
+    filename: policies.kyverno.io/imagevalidatingpolicy_v1alpha1.json
+    kind: imagevalidatingpolicy
+    name: imagevalidatingpolicy_v1alpha1
+  - apiVersion: policies.kyverno.io/v2beta1
+    filename: policies.kyverno.io/policyexception_v2beta1.json
+    kind: PolicyException
+    name: policyexception_v2beta1
 policy.cert-manager.io:
   - apiVersion: policy.cert-manager.io/v1alpha1
     filename: policy.cert-manager.io/certificaterequestpolicy_v1alpha1.json
@@ -8297,6 +8599,10 @@ postgresql.cnpg.io:
     filename: postgresql.cnpg.io/cluster_v1.json
     kind: Cluster
     name: cluster_v1
+  - apiVersion: postgresql.cnpg.io/v1
+    filename: postgresql.cnpg.io/failoverquorum_v1.json
+    kind: FailoverQuorum
+    name: failoverquorum_v1
 privateca.cnrm.cloud.google.com:
   - apiVersion: privateca.cnrm.cloud.google.com/v1beta1
     filename: privateca.cnrm.cloud.google.com/privatecacertificate_v1beta1.json
@@ -8579,6 +8885,15 @@ redis.redis.opstreelabs.in:
     filename: redis.redis.opstreelabs.in/rediscluster_v1beta2.json
     kind: RedisCluster
     name: rediscluster_v1beta2
+reports.kyverno.io:
+  - apiVersion: reports.kyverno.io/v1
+    filename: reports.kyverno.io/clusterephemeralreport_v1.json
+    kind: ClusterEphemeralReport
+    name: clusterephemeralreport_v1
+  - apiVersion: reports.kyverno.io/v1
+    filename: reports.kyverno.io/ephemeralreport_v1.json
+    kind: EphemeralReport
+    name: ephemeralreport_v1
 resource.streamnative.io:
   - apiVersion: resource.streamnative.io/v1alpha1
     filename: resource.streamnative.io/pulsarnamespace_v1alpha1.json
@@ -8871,6 +9186,19 @@ search.azure.com:
     filename: search.azure.com/searchservice_v1api20220901.json
     kind: searchService
     name: searchservice_v1api20220901
+secretgenerator.mittwald.de:
+  - apiVersion: secretgenerator.mittwald.de/v1alpha1
+    filename: secretgenerator.mittwald.de/stringsecret_v1alpha1.json
+    kind: StringSecret
+    name: stringsecret_v1alpha1
+  - apiVersion: secretgenerator.mittwald.de/v1alpha1
+    filename: secretgenerator.mittwald.de/sshkeypair_v1alpha1.json
+    kind: SSHKeyPair
+    name: sshkeypair_v1alpha1
+  - apiVersion: secretgenerator.mittwald.de/v1alpha1
+    filename: secretgenerator.mittwald.de/basicauth_v1alpha1.json
+    kind: BasicAuth
+    name: basicauth_v1alpha1
 secretmanager.cnrm.cloud.google.com:
   - apiVersion: secretmanager.cnrm.cloud.google.com/v1beta1
     filename: secretmanager.cnrm.cloud.google.com/secretmanagersecret_v1beta1.json
@@ -9684,6 +10012,11 @@ tailscale.com:
     filename: tailscale.com/dnsconfig_v1alpha1.json
     kind: DNSConfig
     name: dnsconfig_v1alpha1
+talos.dev:
+  - apiVersion: talos.dev/v1alpha1
+    filename: talos.dev/serviceaccount_v1alpha1.json
+    kind: serviceaccount
+    name: serviceaccount_v1alpha1
 telemetry.istio.io:
   - apiVersion: telemetry.istio.io/v1
     filename: telemetry.istio.io/telemetry_v1.json
@@ -10220,6 +10553,19 @@ wgpolicyk8s.io:
     filename: wgpolicyk8s.io/policyreport_v1alpha2.json
     kind: PolicyReport
     name: policyreport_v1alpha2
+work.open-cluster-management.io:
+  - apiVersion: work.open-cluster-management.io/v1
+    filename: work.open-cluster-management.io/appliedmanifestwork_v1.json
+    kind: AppliedManifestWork
+    name: appliedmanifestwork_v1
+  - apiVersion: work.open-cluster-management.io/v1
+    filename: work.open-cluster-management.io/manifestwork_v1.json
+    kind: ManifestWork
+    name: manifestwork_v1
+  - apiVersion: work.open-cluster-management.io/v1alpha1
+    filename: work.open-cluster-management.io/manifestworkreplicaset_v1alpha1.json
+    kind: ManifestWorkReplicaSet
+    name: manifestworkreplicaset_v1alpha1
 workflows.cnrm.cloud.google.com:
   - apiVersion: workflows.cnrm.cloud.google.com/v1alpha1
     filename: workflows.cnrm.cloud.google.com/workflowsworkflow_v1alpha1.json
